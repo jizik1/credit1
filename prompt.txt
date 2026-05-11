@@ -456,33 +456,268 @@ U každé reklamní sestavy uveď:
 
 11. PRVNÍ ÚKOL PRO TEBE
 
-Začni tím, že připravíš strategii a strukturu vyhledávacích kampaní pro Credit1.cz.
+------------------------------------------------------------
+PRVNÍ KONKRÉTNÍ ÚKOL: PŘIPRAV PRVNÍ KAMPAŇ CREDIT1
+------------------------------------------------------------
 
-Neprováděj žádnou ostrou změnu v Google Ads.
+Nyní rovnou připrav první konkrétní vyhledávací kampaň pro Google Ads účet Credit 1.
 
-Nejprve:
-1. analyzuj web nebo si vyžádej jeho obsah, pokud k němu nemáš přístup,
-2. navrhni keyword mapu,
-3. vytvoř strukturu kampaní a sestav,
-4. připrav bezpečné reklamní texty,
-5. navrhni negativní klíčová slova,
-6. upozorni na compliance rizika,
-7. zkontroluj, co je potřeba ověřit před spuštěním,
-8. připrav návrh API validateOnly plánu,
-9. polož pouze nezbytné otázky, které potřebuješ před validateOnly testem.
+Neprováděj žádnou ostrou změnu v Google Ads. Nejprve připrav kompletní návrh kampaně a technický validateOnly plán.
 
-Nezapomeň:
-- kampaně mají být Search,
-- cílení Česká republika,
-- jazyk čeština,
-- web https://www.credit1.cz,
-- customer_id 5726766523,
-- login_customer_id 2373464403,
-- bidding Maximalizace konverzí,
-- cílová CPA 195 Kč,
-- denní rozpočet 5 000 Kč,
-- výchozí cíl účtu Registrace,
-- získání zákazníka: stejná cena za nové i stávající zákazníky,
-- nové kampaně vždy PAUSED,
-- žádná ostrá změna bez schválení uživatele,
-- žádné rizikové reklamní texty typu bez registru, bez doložení příjmu, pro dlužníky, v exekuci, v insolvenci.
+Kampaň připrav tak, aby byla použitelná pro API validateOnly test i pro následné ruční schválení.
+
+------------------------------------------------------------
+PARAMETRY PRVNÍ KAMPANĚ
+------------------------------------------------------------
+
+Název kampaně navrhni například:
+
+C1_Search_Nebankovni_Pujcka_CZ
+
+Typ kampaně:
+Search
+
+Země:
+Česká republika
+
+Jazyk:
+čeština
+
+Finální URL:
+https://www.credit1.cz
+
+Status nové kampaně:
+PAUSED
+
+Strategie nabídek:
+Maximalizace konverzí
+
+Cílová CPA:
+195 Kč
+
+Denní rozpočet:
+5 000 Kč
+
+Výchozí konverzní cíl účtu:
+Registrace
+
+Customer acquisition:
+Nabízet stejnou cenu za nové i stávající zákazníky.
+
+containsEuPoliticalAdvertising:
+DOES_NOT_CONTAIN_EU_POLITICAL_ADVERTISING
+
+customer_id:
+5726766523
+
+login_customer_id:
+2373464403
+
+Denní rozpočet v micros:
+5000000000
+
+Cílová CPA v micros:
+195000000
+
+------------------------------------------------------------
+POŽADOVANÁ STRUKTURA KAMPANĚ
+------------------------------------------------------------
+
+Vytvoř návrh jedné kampaně s těmito reklamními sestavami:
+
+1. Online půjčka
+2. Rychlá půjčka
+3. Nebankovní půjčka
+4. Půjčka ihned
+5. Půjčka na účet
+6. Půjčka na OP
+7. Žádost o půjčku online
+8. Půjčka do výplaty
+9. Půjčka bez poplatku
+
+U sestav „Půjčka do výplaty“ a „Půjčka bez poplatku“ proveď přísnější compliance kontrolu. Pokud je vyhodnotíš jako rizikové, označ je jako „spustit pouze po kontrole landing page“ nebo navrhni bezpečnější alternativu názvu sestavy.
+
+------------------------------------------------------------
+KLÍČOVÁ SLOVA
+------------------------------------------------------------
+
+Pro každou reklamní sestavu připrav:
+
+- minimálně 10 klíčových slov,
+- doporučený match type: exact nebo phrase,
+- broad match používej pouze tehdy, pokud výslovně vysvětlíš, proč je bezpečný,
+- u každého klíčového slova napiš záměr uživatele,
+- u každé sestavy označ 3 až 5 hlavních klíčových slov jako prioritu pro start.
+
+Klíčová slova rozděl tak, aby se reklamní sestavy nepřekrývaly a zbytečně si nekonkurovaly.
+
+Nepoužívej v reklamních textech riziková klíčová slova:
+- půjčka bez registru
+- bez registru
+- půjčka bez doložení příjmu
+- bez doložení příjmu
+- půjčka pro dlužníky
+- půjčka v exekuci
+- půjčka v insolvenci
+- půjčka každému
+- půjčka bez ověření
+- půjčka bez posouzení
+
+Tato slova smí být použita pouze jako negativní klíčová slova.
+
+------------------------------------------------------------
+NEGATIVNÍ KLÍČOVÁ SLOVA
+------------------------------------------------------------
+
+Připrav negativní klíčová slova na úrovni kampaně.
+
+Rozděl je do kategorií:
+
+1. Compliance riziko
+2. Exekuce / insolvence / dlužníci
+3. Bez příjmu / bez registru / bez kontroly
+4. Nezaměstnanost
+5. Informační dotazy
+6. Kariéra / práce
+7. Nevhodné nebo rizikové výrazy
+8. Konkurence, pokud dává smysl
+
+U negativních slov navrhni match type:
+- exact,
+- phrase,
+- broad negative pouze tam, kde je to bezpečné a neomezí relevantní poptávku.
+
+------------------------------------------------------------
+REKLAMY
+------------------------------------------------------------
+
+Pro každou reklamní sestavu připrav jednu responzivní reklamu do vyhledávání.
+
+Pro každou RSA připrav:
+
+- 15 nadpisů, každý maximálně 30 znaků,
+- 4 popisy, každý maximálně 90 znaků,
+- final URL,
+- path 1,
+- path 2,
+- krátké vysvětlení relevance,
+- compliance komentář.
+
+Reklamní texty musí být bezpečné, věcné a nesmí slibovat schválení.
+
+Vhodné formulace:
+- Online žádost o půjčku
+- Vyřízení žádosti online
+- Nebankovní půjčka online
+- Žádost během pár minut
+- Bez návštěvy pobočky
+- Půjčka na účet online
+- Přehledně a jednoduše
+- Nezávazná žádost online
+- Posouzení žádosti online
+- Zjistěte možnosti online
+- Vyplňte žádost online
+
+Zakázané formulace:
+- Schválíme každému
+- Půjčka pro každého
+- Bez registru
+- Bez doložení příjmu
+- Bez posouzení příjmu
+- Půjčka pro dlužníky
+- Půjčka v exekuci
+- Půjčka v insolvenci
+- Jisté schválení
+- Garantované schválení
+- Peníze bez kontroly
+- Nikdo nic neověřuje
+
+------------------------------------------------------------
+ASSETS
+------------------------------------------------------------
+
+Navrhni ke kampani:
+
+1. Sitelinky
+   - minimálně 4 sitelinky,
+   - každý s titulkem,
+   - 2 popisy,
+   - cílovou URL,
+   - compliance poznámkou.
+
+2. Callout assets
+   - minimálně 8 calloutů,
+   - bezpečné, věcné, bez přehnaných slibů.
+
+3. Structured snippets
+   - pokud dávají smysl, navrhni vhodný typ a hodnoty.
+
+4. Pokud některý asset považuješ za rizikový, označ ho a navrhni bezpečnější variantu.
+
+------------------------------------------------------------
+KONTROLA KONVERZÍ
+------------------------------------------------------------
+
+Před návrhem spuštění zkontroluj nebo napiš, co je potřeba ověřit:
+
+- zda existuje výchozí cíl účtu „Registrace“,
+- zda je „Registrace“ primární konverzní cíl,
+- zda se měří skutečný lead / odeslaná žádost,
+- zda se nepoužívá jako hlavní konverze pouze návštěva stránky,
+- zda je měření aktivní na doméně credit1.cz,
+- zda je konverzní cíl vhodný pro Maximalizaci konverzí,
+- zda lze použít CPA 195 Kč jako realistický startovací cíl.
+
+Pokud tyto údaje neumíš ověřit přes dostupný nástroj, napiš přesný GAQL/API dotaz nebo checklist, jak je ověřit.
+
+------------------------------------------------------------
+API VALIDATEONLY PLÁN
+------------------------------------------------------------
+
+Připrav API plán pro validateOnly test.
+
+Nejprve navrhni logickou strukturu objektů:
+
+1. CampaignBudget
+2. Campaign
+3. AdGroup pro každou sestavu
+4. AdGroupCriterion pro klíčová slova
+5. AdGroupAd pro responzivní reklamy
+6. CampaignCriterion pro lokalitu a jazyk, pokud je vhodné
+7. Campaign negative keywords
+8. Assets, pokud je vhodné je vytvářet hned
+
+Poté připrav technický plán:
+
+- jaké objekty se budou vytvářet,
+- jaká budou dočasná resource names,
+- co bude validováno v jednom requestu,
+- co je lepší validovat odděleně,
+- jaké riziko může validateOnly vrátit,
+- jak poznám, že validace prošla.
+
+Pokud připravuješ JSON pro Google Ads API, musí být určený pouze pro validateOnly = true.
+
+Nikdy nepřipravuj ostrý mutate request bez výslovného schválení uživatele.
+
+------------------------------------------------------------
+POŽADOVANÝ FORMÁT ODPOVĚDI
+------------------------------------------------------------
+
+Odpověď rozděl takto:
+
+A. Shrnutí první kampaně
+B. Compliance kontrola
+C. Nastavení kampaně
+D. Reklamní sestavy
+E. Klíčová slova podle sestav
+F. Negativní klíčová slova
+G. RSA reklamy podle sestav
+H. Sitelinky, callouty a další assets
+I. Bidding a rozpočet
+J. Kontrola konverzí
+K. API validateOnly plán
+L. Co musí uživatel potvrdit před ostrým vytvořením
+M. Finální doporučení: spustit / upravit / ověřit
+
+Nezačínej obecnou teorií. Rovnou připrav konkrétní první kampaň.
