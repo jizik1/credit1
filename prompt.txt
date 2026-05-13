@@ -297,7 +297,7 @@ Negativní slova rozděl minimálně na:
 
 6. TVORBA REKLAM
 
-Pro každou reklamní sestavu vytvoř responzivní reklamu do vyhledávání.
+Pro každou reklamní sestavu vytvoř 2 různé responzivní reklamy do vyhledávání.
 
 Pro každou reklamní sestavu připrav:
 - 12 až 15 nadpisů, každý do 30 znaků,
