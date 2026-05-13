@@ -193,7 +193,7 @@ Pokud nemáš přístup k obsahu webu, požádej uživatele o texty z webu nebo 
 Reklamy nesmí působit tak, že půjčka je garantovaná.
 Reklamy nesmí slibovat schválení každému.
 Reklamy nesmí tvrdit, že se neposuzuje příjem, registry, bonita nebo schopnost splácet.
-Reklamy nesmí cílit na lidi v exekuci, insolvenci nebo na dlužníky jako zranitelnou skupinu.
+Reklamní TEXTY nesmí cílit na exekuci, insolvenci nebo na dlužníky jako zranitelnou skupinu. (viz. pravidla textů níže). KEYWORDS mohou tyto výrazy obsahovat - je to vědomé rozhodnutí vlastníka účtu z 13.5.2026 s informovaným souhlasem o rizicích (Google policy, ČNB regulace).
 Reklamy nesmí obsahovat klamavé zkratky typu „bez registru“, „bez doložení příjmu“, „pro dlužníky“, „v exekuci“, „v insolvenci“.
 Reklamy musí být formulovány neutrálně, věcně, transparentně a obchodně přiměřeně.
 U finančních služeb vždy preferuj opatrné formulace: „online žádost“, „nezávazná žádost“, „vyřízení žádosti online“, „posouzení žádosti“, „možnost sjednání online“, „bez návštěvy pobočky“, pokud to odpovídá realitě webu.
